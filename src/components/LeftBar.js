@@ -1,7 +1,10 @@
 import React from 'react'
+import { NewCat } from "./NewCat"
 
 export const LeftBar = () => {
   return (
-    <div className="left-bar">LeftBar</div>
+    <div className="left-bar">
+        <NewCat/>
+    </div>
   )
 }
