@@ -5,7 +5,12 @@ export const MainContainer = () => {
   return (
     <div className="main-container">
         <div className="title">CatGPT</div>
-        <TableHeading/>
+        <div className="table-container">
+            <TableHeading>Examples</TableHeading>
+            <TableHeading>Capabilities</TableHeading>
+            <TableHeading>Limitations</TableHeading>
+        </div>
+        
     </div>
   )
 }

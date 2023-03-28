@@ -65,6 +65,11 @@ body{
   font-size: 3rem;
 }
 
+.table-container{
+  display: flex;
+  gap: 10rem;
+}
+
 .table-heading{
   display: flex;
   flex-direction: column;
@@ -76,3 +81,4 @@ body{
   height: 50px;
   width: 50px;
 }
+
