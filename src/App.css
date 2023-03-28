@@ -59,22 +59,28 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 3rem;
 }
 
 .title{
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
+
+/* Table */
 
 .table-container{
   display: flex;
-  gap: 10rem;
+  gap: 1rem;
+  margin-bottom: 10rem;
 }
 
 .table-heading{
   display: flex;
+  gap: .5rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color:rgb(67, 66, 66);
 }
 
 .table-heading img{
@@ -82,3 +88,25 @@ body{
   width: 50px;
 }
 
+.table-block{
+  width: 13rem;
+  height: 3rem;
+  background-color: #f5f5f7;
+  padding: 0.7rem 0.6rem;
+  border-radius: 3px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:rgb(63, 63, 63);
+}
+
+.table-column{
+  display:flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.examples .table-block:hover{
+  background-color: rgb(191, 190, 190);
+}
