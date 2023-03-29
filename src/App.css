@@ -73,6 +73,7 @@ body{
   display: flex;
   gap: 1rem;
   margin-bottom: 10rem;
+  max-width: 100%;
 }
 
 .table-heading{
@@ -86,11 +87,11 @@ body{
 
 .table-heading img{
   height: 50px;
-  width: 50px;
+  max-width: 50px;
 }
 
 .table-block{
-  width: 13rem;
+  max-width: 13rem;
   height: 3rem;
   background-color: #f5f5f7;
   padding: 0.7rem 0.6rem;
