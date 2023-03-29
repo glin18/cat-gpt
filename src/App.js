@@ -34,7 +34,8 @@ function App() {
   return (
     <div className="App">
       <LeftBar onNewChat={onNewChat}/>
-      {!showChat ? <MainContainer onSubmitHandler={onSubmitHandler} onChangeHandler={onChangeHandler}/> : <ChatContainer/>}
+      {!showChat ? <MainContainer onSubmitHandler={onSubmitHandler} onChangeHandler={onChangeHandler}/> : 
+      <ChatContainer onSubmitHandler={onSubmitHandler} onChangeHandler={onChangeHandler} question={question}/>}
     </div>
   );
 }

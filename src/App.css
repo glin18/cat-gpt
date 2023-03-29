@@ -162,6 +162,35 @@ button img{
   min-height: 100vh;
   width: 100%-16.5rem;
   margin-left: 16.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question-container{
+  width: 100%;
+  padding: 30px 0px 30px 40%;
+}
+
+.question-inner-container{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.question-container img{
+  width: 30px; 
+  height: 30px;
+}
+
+.question{
+  
+}
+
+.answer-container{
+  width: 100%;
+  padding: 30px 0px 30px 15%;
+  background-color: rgb(245, 245, 245);
 }
 
 @media (max-width: 1100px){
@@ -182,7 +211,11 @@ button img{
     width: 100%;
   }
 
-  .main-container{
+  .question-container{
+    margin-top: 4rem;
+  }
+
+  .main-container, .chat-container{
     margin-left: 0px;
   }
 
