@@ -196,6 +196,19 @@ button img{
   background-color: rgb(245, 245, 245);
 }
 
+.loading{
+  width: 10px;
+  height: 20px;
+  background-color: black;
+  animation: flickerAnimation 1s infinite;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity: 0; }
+  100% { opacity:1; }
+}
+
 @media (max-width: 1100px){
   input{
     width: 40rem;
@@ -215,7 +228,7 @@ button img{
   }
 
   .question-container{
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 
   .main-container, .chat-container{
