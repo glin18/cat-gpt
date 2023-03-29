@@ -10,13 +10,13 @@ export const MainContainer = () => {
         <div className="table-container">
             <div className="table-column examples">
                 <TableHeading>Examples</TableHeading>
-                <TableBlock>"Explain how cats can become software developers"</TableBlock>
+                <TableBlock>"Explain how cats become software developers"</TableBlock>
                 <TableBlock>"Got any gift ideas for a cat's 13th birthday?"</TableBlock>
                 <TableBlock>"How do you make API requests using CatScript?"</TableBlock>
             </div>
             <div className="table-column">
                 <TableHeading>Capabilities</TableHeading>
-                <TableBlock>Answer all your questions related to Clawenforcement</TableBlock>
+                <TableBlock>Answer questions related to Clawenforcement</TableBlock>
                 <TableBlock>An absolutely amazing meowsician</TableBlock>
                 <TableBlock>Unlimited pawerrrr</TableBlock>
             </div>
