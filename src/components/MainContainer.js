@@ -1,6 +1,7 @@
 import React from 'react'
 import { TableHeading } from "./TableHeading"
 import { TableBlock } from "./TableBlock"
+import { InputBar } from "./InputBar"
 
 export const MainContainer = () => {
   return (
@@ -27,7 +28,7 @@ export const MainContainer = () => {
             </div>
             
         </div>
-        
+        <InputBar/>
     </div>
   )
 }
