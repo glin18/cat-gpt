@@ -6,11 +6,35 @@ import { useState } from "react";
 
 function App() {
   const [ showChat, setShowChat ] = useState(false)
+  const [ message, setMessage ] = useState("")
+  const [ question, setQuestion ] = useState("")
+
+  const input = document.querySelector("input")
+
+  const onSubmitHandler = (e) => {
+    e.preventDefault()
+    if(message){
+      setQuestion(message)
+      setMessage("")
+      setShowChat(true)
+    }
+  }
+
+  const onChangeHandler = (e) => {
+    setMessage(e.target.value)
+    console.log(e.target.value)
+  } 
+
+  const onNewChat = () => {
+    setShowChat(false)
+    setMessage("")
+    input.value = ""
+  }
 
   return (
     <div className="App">
-      <LeftBar/>
-      {!showChat ? <MainContainer/> : <ChatContainer/>}
+      <LeftBar onNewChat={onNewChat}/>
+      {!showChat ? <MainContainer onSubmitHandler={onSubmitHandler} onChangeHandler={onChangeHandler}/> : <ChatContainer/>}
     </div>
   );
 }

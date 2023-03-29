@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const NewCat = () => {
+export const NewCat = ({onNewChat}) => {
   return (
-    <div className="new-cat">
+    <div className="new-cat" onClick={onNewChat}>
         <div className="new-cat-plus">+</div>
         <div className="new-cat-text">New cat</div>
     </div>

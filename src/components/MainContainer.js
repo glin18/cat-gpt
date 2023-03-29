@@ -3,7 +3,7 @@ import { TableHeading } from "./TableHeading"
 import { TableBlock } from "./TableBlock"
 import { InputBar } from "./InputBar"
 
-export const MainContainer = () => {
+export const MainContainer = ({onSubmitHandler, onChangeHandler}) => {
   return (
     <div className="main-container">
         <div className="title">CatGPT</div>
@@ -28,7 +28,7 @@ export const MainContainer = () => {
             </div>
             
         </div>
-        <InputBar/>
+        <InputBar onSubmitHandler={onSubmitHandler} onChangeHandler={onChangeHandler}/>
     </div>
   )
 }
