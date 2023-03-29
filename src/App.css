@@ -116,7 +116,7 @@ body{
 /* Input Bar */
 
 input{
-  width: 50rem;
+  width:50rem;
   padding: 0.9rem;
   outline: none;
   box-shadow: 0px 0px 1rem rgba(181, 180, 180, 0.4);
@@ -132,4 +132,43 @@ input{
 
 input:focus{
   outline: none;
+}
+
+@media (max-width: 1100px){
+  input{
+    width: 40rem;
+  }
+}
+
+@media (max-width:900px){
+  input{
+    width: 30rem;
+  }
+}
+
+@media(max-width:850px){
+  .left-bar{
+    height: 4rem;
+    width: 100%;
+  }
+
+  .main-container{
+    margin-left: 0px;
+  }
+
+  input{
+    width: 40rem;
+  }
+}
+
+@media(max-width: 675px){
+  input{
+    width: 30rem;
+  }
+}
+
+@media(max-width: 500px){
+  input{
+    width: 20rem;
+  }
 }
