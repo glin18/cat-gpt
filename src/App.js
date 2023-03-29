@@ -28,7 +28,7 @@ function App() {
   const onNewChat = () => {
     setShowChat(false)
     setMessage("")
-    input.value = ""
+    // input.value = ""
   }
 
   return (
