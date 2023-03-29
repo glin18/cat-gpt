@@ -181,15 +181,18 @@ button img{
 .question-container img{
   width: 30px; 
   height: 30px;
+  padding: 7.5px;
+
 }
 
-.question{
-  
+.answer-container img {
+  width: 45px;
+  height: 45px;
 }
 
 .answer-container{
   width: 100%;
-  padding: 30px 0px 30px 15%;
+  padding: 30px 0px 30px 40%;
   background-color: rgb(245, 245, 245);
 }
 
