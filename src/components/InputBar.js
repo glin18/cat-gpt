@@ -2,7 +2,7 @@ import React from 'react'
 
 export const InputBar = () => {
   return (
-    <div>
+    <div className="input-bar-container">
         <form>
             <input type="text"></input>
         </form>
