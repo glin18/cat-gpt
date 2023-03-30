@@ -8,8 +8,8 @@ export const ChatContainer = ({onSubmitHandler, onChangeHandler, question}) => {
     <div className="chat-container">
         <QuestionContainer question={question}/>
         <AnswerContainer/>
-        <QuestionContainer question={question}/>
-        <AnswerContainer/>
+        {/* <QuestionContainer question={question}/>
+        <AnswerContainer/> */}
         <InputBar onSubmitHandler={onSubmitHandler} onChangeHandler={onChangeHandler}/>
     </div>
   )
