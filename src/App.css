@@ -182,7 +182,10 @@ button img{
   width: 30px; 
   height: 30px;
   padding: 7.5px;
+}
 
+.question{
+  display: flex;
 }
 
 .answer-container img {
