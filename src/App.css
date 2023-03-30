@@ -178,6 +178,11 @@ button img{
   align-items: center;
 }
 
+.answer-inner-container{
+  display: flex;
+  gap: 20px;
+}
+
 .question-container img{
   width: 30px; 
   height: 30px;
@@ -204,6 +209,22 @@ button img{
   height: 20px;
   background-color: black;
   animation: flickerAnimation 1s infinite;
+}
+
+.answer-text-container{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.answer-text-container img{
+  height: 300px;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.hidden{
+  display: none;
 }
 
 @keyframes flickerAnimation {

@@ -4,13 +4,14 @@ export const AnswerText = ({ children }) => {
   const [revealedLetters, setRevealedLetters] = useState(children[0]);
   const [isTyping, setIsTyping] = useState(true);
   const index = useRef(0);
+  const CAT_IMAGE_URL = "https://cataas.com/cat/gif";
 
   useEffect(() => {
     const tick = () => {
       index.current++;
-      setRevealedLetters((prev) => (prev + children[index.current]));
+      setRevealedLetters((prev) => prev + children[index.current]);
     };
-    if (index.current < children.length -1) {
+    if (index.current < children.length - 1) {
       let addChar = setInterval(tick, 200);
       return () => clearInterval(addChar);
     } else {
@@ -18,8 +19,11 @@ export const AnswerText = ({ children }) => {
     }
   }, [revealedLetters]);
   return (
-    <>
-      <div className="question">{revealedLetters}{isTyping && <div className="loading"></div>}</div>
-    </>
+    <div>
+      <div className="question">
+        {revealedLetters}
+        {isTyping && <div className="loading"></div>}
+      </div>
+    </div>
   );
 };
