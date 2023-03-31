@@ -10,11 +10,11 @@ export const ChatContainer = ({onSubmitHandler, onChangeHandler, question}) => {
         <AnswerContainer/> */}
         {/* <QuestionContainer question={question}/>
         <AnswerContainer/> */}
-        {question.map((pair)=>(
-          <>
+        {question.map((pair, index)=>(
+          <div className="pair-container" key={index}>
             <QuestionContainer question={pair.question}/>
             <AnswerContainer answer={pair.answer}/>
-          </>
+          </div>
         ))}
 
         <InputBar onSubmitHandler={onSubmitHandler} onChangeHandler={onChangeHandler}/>

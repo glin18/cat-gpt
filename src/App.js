@@ -52,7 +52,6 @@ function App() {
     ]);
     setMessage("");
     setShowChat(true);
-    input.value = ""
   }
 
   const onChangeHandler = (e) => {

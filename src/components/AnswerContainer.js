@@ -3,7 +3,7 @@ import CatIcon from "../images/cat-icon.png";
 import { AnswerText } from "./AnswerText";
 
 export const AnswerContainer = ({ answer }) => {
-  
+
   const [imageLoaded, setImageLoaded] = useState(false);
 
   return (

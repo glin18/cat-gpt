@@ -92,7 +92,7 @@ body{
 
 .table-block{
   max-width: 13rem;
-  height: 3rem;
+  min-height: 3rem;
   background-color: #f5f5f7;
   padding: 0.7rem 0.6rem;
   border-radius: 3px;
@@ -170,13 +170,17 @@ button img{
   align-items: center;
 }
 
+.pair-container{
+  width: 100%;
+}
+
 .chat-container::-webkit-scrollbar {
   display: none;
 }
 
 .question-container{
   width: 100%;
-  padding: 30px 0px 30px 40%;
+  padding: 30px 0px 30px 23%;
 }
 
 .question-inner-container{
@@ -208,7 +212,7 @@ button img{
 
 .answer-container{
   width: 100%;
-  padding: 30px 0px 30px 40%;
+  padding: 30px 0px 30px 23%;
   background-color: rgb(245, 245, 245);
 }
 
@@ -324,4 +328,8 @@ button img{
     padding-left: 15px;
   }
 
+  .main-container{
+    padding-top: 6rem;
+    gap: 1rem;
+  }
 }
