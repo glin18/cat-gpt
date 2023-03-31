@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import CatIcon from "../images/cat-icon.png";
 import { AnswerText } from "./AnswerText";
 
-export const AnswerContainer = ({ answer }) => {
+export const AnswerContainer = ({ answer, source }) => {
 
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -16,7 +16,7 @@ export const AnswerContainer = ({ answer }) => {
         <img src={CatIcon}></img>
         <div className="answer-text-container">
           <img
-            src={`https://cataas.com/cat/gif?${performance.now()}`}
+            src={source}
             className={!imageLoaded ? "hidden" : ""}
             onLoad={() => setImageLoaded(true)}
           ></img>

@@ -9,7 +9,7 @@ export const ChatContainer = ({onSubmitHandler, onChangeHandler, question}) => {
         {question.map((pair, index)=>(
           <div className="pair-container" key={index}>
             <QuestionContainer question={pair.question}/>
-            <AnswerContainer answer={pair.answer}/>
+            <AnswerContainer answer={pair.answer} source={pair.source}/>
           </div>
         ))}
 

@@ -30,6 +30,7 @@ function App() {
         {
           question: message,
           answer: answer,
+          source: `https://cataas.com/cat/gif?${performance.now()}`
         },
       ]);
       setMessage("");
@@ -48,6 +49,7 @@ function App() {
       {
         question: text.slice(1, -1),
         answer: answer,
+        source: `https://cataas.com/cat/gif?${performance.now()}`
       },
     ]);
     setMessage("");
