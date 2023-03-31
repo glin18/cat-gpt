@@ -3,15 +3,8 @@ import CatIcon from "../images/cat-icon.png";
 import { AnswerText } from "./AnswerText";
 
 export const AnswerContainer = ({ answer }) => {
-  // const [isLoading, setIsLoading] = useState(true);
+  
   const [imageLoaded, setImageLoaded] = useState(false);
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 4000);
-  //   return () => clearTimeout(timer);
-  // }, []);
 
   return (
     <div className="answer-container">
