@@ -46,7 +46,7 @@ function App() {
     setQuestion([
       ...question,
       {
-        question: text,
+        question: text.slice(1, -1),
         answer: answer,
       },
     ]);
