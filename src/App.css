@@ -197,6 +197,7 @@ button img{
 
 .question{
   display: flex;
+  max-width: 80%;
 }
 
 .answer-container img {

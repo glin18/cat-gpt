@@ -8,6 +8,13 @@ function App() {
   const [showChat, setShowChat] = useState(false);
   const [message, setMessage] = useState("");
   const [question, setQuestion] = useState([]);
+  const POSSIBLE_ANSWERS = [
+    "meow ",
+    "meowwww meow?? meow meow meow!",
+    "meow meow, meow meow meow! meow meow meow meow meow? ",
+    "meow meow meow!",
+    "meow meowww meow MEOW meow meow meow! ",
+  ]
 
   const input = document.querySelector("input");
 
@@ -15,7 +22,9 @@ function App() {
     e.preventDefault();
     console.log(input);
     if (message) {
-      const answer = "meow meow meow meow meow meow";
+      const randNum = Math.floor(Math.random()*5)
+      const randRepeat = Math.floor(Math.random()*3)
+      const answer = POSSIBLE_ANSWERS[randNum].repeat(randRepeat);
       setQuestion([
         ...question,
         {
