@@ -159,12 +159,18 @@ button img{
 /* Chat Container */
 
 .chat-container{
-  min-height: 100vh;
-  width: 100%-16.5rem;
+  height: 87vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* width: 100%-16.5rem; */
   margin-left: 16.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.chat-container::-webkit-scrollbar {
+  display: none;
 }
 
 .question-container{
