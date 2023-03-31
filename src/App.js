@@ -13,6 +13,7 @@ function App() {
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
+    console.log(input);
     if (message) {
       const answer = "meow meow meow meow meow meow";
       setQuestion([
@@ -25,6 +26,7 @@ function App() {
       setMessage("");
       setShowChat(true);
     }
+    input.value = ""
   };
 
   const onChangeHandler = (e) => {
@@ -35,7 +37,8 @@ function App() {
   const onNewChat = () => {
     setShowChat(false);
     setMessage("");
-    // input.value = ""
+    setQuestion([]);
+    
   };
 
   return (
