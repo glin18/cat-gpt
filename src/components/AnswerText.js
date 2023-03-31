@@ -7,6 +7,11 @@ export const AnswerText = ({ children }) => {
   const chat = document.querySelector(".chat-container");
 
   useEffect(() => {
+    const chat = document.querySelector(".chat-container");
+    chat.scrollTo(0, chat.scrollHeight);
+  }, []);
+
+  useEffect(() => {
     const tick = () => {
       index.current++;
       setRevealedLetters((prev) => prev + children[index.current]);
@@ -19,6 +24,7 @@ export const AnswerText = ({ children }) => {
       chat.scrollTo(0, chat.scrollHeight);
     }
   }, [revealedLetters]);
+  
   return (
     <div>
       <div className="question">
