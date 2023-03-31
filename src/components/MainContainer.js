@@ -3,16 +3,16 @@ import { TableHeading } from "./TableHeading"
 import { TableBlock } from "./TableBlock"
 import { InputBar } from "./InputBar"
 
-export const MainContainer = ({onSubmitHandler, onChangeHandler}) => {
+export const MainContainer = ({onSubmitHandler, onChangeHandler, onExampleHandler}) => {
   return (
     <div className="main-container">
         <div className="title">CatGPT</div>
         <div className="table-container">
             <div className="table-column examples">
                 <TableHeading>Examples</TableHeading>
-                <TableBlock>"Explain how cats become software developers"</TableBlock>
-                <TableBlock>"Got any gift ideas for a cat's 13th birthday?"</TableBlock>
-                <TableBlock>"How do you make API requests using CatScript?"</TableBlock>
+                <TableBlock onExampleHandler={onExampleHandler}>"Explain how cats become software developers"</TableBlock>
+                <TableBlock onExampleHandler={onExampleHandler}>"Got any gift ideas for a cat's 13th birthday?"</TableBlock>
+                <TableBlock onExampleHandler={onExampleHandler}>"How do you make API requests using CatScript?"</TableBlock>
             </div>
             <div className="table-column">
                 <TableHeading>Capabilities</TableHeading>

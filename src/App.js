@@ -38,6 +38,10 @@ function App() {
     input.value = ""
   };
 
+  const onExampleHandler = (text) => {
+    console.log(text)
+  }
+
   const onChangeHandler = (e) => {
     setMessage(e.target.value);
     console.log(e.target.value);
@@ -57,6 +61,7 @@ function App() {
         <MainContainer
           onSubmitHandler={onSubmitHandler}
           onChangeHandler={onChangeHandler}
+          onExampleHandler={onExampleHandler}
         />
       ) : (
         <ChatContainer
