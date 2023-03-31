@@ -40,6 +40,19 @@ function App() {
 
   const onExampleHandler = (text) => {
     console.log(text)
+    const randNum = Math.floor(Math.random()*4)
+    const randRepeat = Math.floor(Math.random()*4 + 1)
+    const answer = POSSIBLE_ANSWERS[randNum].repeat(randRepeat);
+    setQuestion([
+      ...question,
+      {
+        question: text,
+        answer: answer,
+      },
+    ]);
+    setMessage("");
+    setShowChat(true);
+    input.value = ""
   }
 
   const onChangeHandler = (e) => {
