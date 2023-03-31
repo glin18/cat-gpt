@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import CatIcon from "../images/cat-icon.png";
 import { AnswerText } from "./AnswerText";
 
-export const AnswerContainer = () => {
+export const AnswerContainer = ({ answer }) => {
   // const [isLoading, setIsLoading] = useState(true);
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -33,7 +33,7 @@ export const AnswerContainer = () => {
           ></img>
           {imageLoaded ? (
             <div>
-              <AnswerText>meow meow meow?! MEOW meow meow.. meow meow</AnswerText>
+              <AnswerText>{ answer }</AnswerText>
             </div>
           ) : (
             <div className="loading"></div>
