@@ -111,6 +111,7 @@ body{
 
 .examples .table-block:hover{
   background-color: rgb(191, 190, 190);
+  cursor: pointer;
 }
 
 /* Input Bar */
