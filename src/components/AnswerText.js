@@ -24,10 +24,10 @@ export const AnswerText = ({ children }) => {
       chat.scrollTo(0, chat.scrollHeight);
     }
   }, [revealedLetters]);
-  
+
   return (
     <div>
-      <div className="question">
+      <div className="answer-text">
         {revealedLetters}
         {isTyping && <div className="loading"></div>}
       </div>

@@ -197,7 +197,7 @@ button img{
 
 .question{
   display: flex;
-  max-width: 80%;
+  max-width: 50%;
 }
 
 .answer-container img {
@@ -216,6 +216,7 @@ button img{
   height: 20px;
   background-color: black;
   animation: flickerAnimation 1s infinite;
+  display: inline-block;
 }
 
 .answer-text-container{
@@ -228,6 +229,10 @@ button img{
   height: 300px;
   width: 300px;
   margin-top: 10px;
+}
+
+.answer-text{
+  max-width: 40vw;
 }
 
 .hidden{
