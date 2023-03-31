@@ -290,7 +290,7 @@ button img{
     font-size: 40px;
   }
 
-  .question-container{
+  .pair-container:nth-of-type(1){
     margin-top: 5rem;
   }
 
