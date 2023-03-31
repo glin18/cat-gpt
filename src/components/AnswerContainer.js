@@ -25,15 +25,11 @@ export const AnswerContainer = ({ answer }) => {
           <img
             src={`https://cataas.com/cat/gif?${performance.now()}`}
             className={!imageLoaded ? "hidden" : ""}
-            onLoad={()=>{
-              const timer = setTimeout(()=>{
-                setImageLoaded(true)
-              }, 1000) 
-            }}
+            onLoad={() => setImageLoaded(true)}
           ></img>
           {imageLoaded ? (
             <div>
-              <AnswerText>{ answer }</AnswerText>
+              <AnswerText>{answer}</AnswerText>
             </div>
           ) : (
             <div className="loading"></div>
