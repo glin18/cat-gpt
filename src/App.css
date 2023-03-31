@@ -116,8 +116,8 @@ body{
 /* Input Bar */
 
 input{
-  width:50rem;
-  padding: 0.9rem;
+  width: 50rem;
+  padding: 0.9rem 2.5rem 0.9rem 0.9rem;
   outline: none;
   box-shadow: 0px 0px 1rem rgba(181, 180, 180, 0.4);
   border: 1px solid rgb(209, 209, 209);
