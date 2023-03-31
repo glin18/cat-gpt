@@ -274,4 +274,12 @@ button img{
   input{
     width: 20rem;
   }
+  .answer-container, .question-container{
+    padding-left: 15px;
+  }
+
+  .answer-text-container img{
+    height: 200px;
+    width: 200px;
+  }
 }
